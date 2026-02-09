@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="style/style.css"> 
+    <title>FormulaireJava
+    </title> 
+</head>
+<body>
+    <button id="bouton">Saisir une année</button> <!-- bouton pour saisir une annee -->
+    <span id="resultat"></span> <!-- zone pour afficher le resultat -->
+    <br><br>
+
+    <form id="formulaire"> <!-- vormulaire client -->
+        <label for="civilite">Civilité :</label>
+        <select id="civilite" name="civilite" required> <!-- choix civilite -->
+            <option value="">-- Choisir --</option>
+            <option value="M.">Monsieur</option>
+            <option value="Mme">Madame</option>
+            <option value="Mme">Autre</option>
+        </select>
+        <br><br>
+
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required> <!-- champ nom obligatoire -->
+        <br><br>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required> <!-- champ prenom obligatoire -->
+        <br><br>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required> <!-- champ email obligatoire -->
+        <br><br>
+
+        <label for="tel">Téléphone :</label>
+        <input type="tel" id="tel" name="tel" pattern="^0[0-9]{9}$" required> <!-- champ telephone avec format -->
+        <br><br>
+
+        <button type="submit">Envoyer</button> <!-- bouton envoyer le formulaire -->
+    </form>
+
+    <script src="script/script.js"></script> 
+</body>
+</html>
