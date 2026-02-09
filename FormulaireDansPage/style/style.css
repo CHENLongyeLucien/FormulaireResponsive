@@ -1,0 +1,19 @@
+.menu {
+    color: white;          
+    transition: color 0.3s; 
+    text-decoration: none;
+}
+
+.menu:hover {
+    color: red; 
+}
+
+
+.pub {
+    background-image: url('../image/pub.jpg'); 
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    color: white;                 
+    text-align: center;           
+}
